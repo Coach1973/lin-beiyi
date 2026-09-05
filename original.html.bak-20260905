@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>林貝羿 ｜ 逸心生技創辦人・「淳清淨」品牌主理人</title>
+<meta name="description" content="以絕對負責的態度，做對的產品，成就善良的人生。逸心生技創辦人林貝羿，21 年資深媒體人，2018–2021 有紀錄的公益足跡。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --paper:#F6F2EA; --paper-2:#EFE9DD;
+  --ink:#16150F; --ink-soft:#4A463C; --ink-faint:#8C8677;
+  --ink-note:#6E685B;                 /* --ink-faint 的可讀版本，供小字使用（AA 4.9:1） */
+  --cinnabar:#9C2B22; --gold:#B5924F;
+  --gold-ink:#85672A;                 /* 金色文字的可讀版本（AA 4.7:1） */
+  --pine:#16241E; --rule:rgba(22,21,15,.14);
+  --serif:"Noto Serif TC",serif; --sans:"Noto Sans TC",sans-serif;
+  --nav-h:52px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-weight:300; font-size:16px; line-height:1.9;
+  letter-spacing:.02em; overflow-x:hidden;
+}
+/* 紙面顆粒：inline SVG feTurbulence，opacity .03 */
+body::before{
+  content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.032;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:240px 240px; mix-blend-mode:multiply;
+}
+img{display:block; max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cinnabar); outline-offset:3px; border-radius:1px}
+.pine :focus-visible,.lb :focus-visible{outline-color:var(--gold)}
+::selection{background:rgba(156,43,34,.16)}
+
+/* ---------- layout ---------- */
+.wrap{position:relative; max-width:1120px; margin:0 auto; padding-inline:clamp(20px,5vw,40px)}
+.wrap--wide{max-width:1560px}
+.sec{position:relative; padding-block:clamp(72px,10vw,148px); z-index:1}
+.sec[id]{scroll-margin-top:calc(var(--nav-h) + 8px)}
+.pine{background:var(--pine); color:#fff}
+.paper2{background:var(--paper-2)}
+.hr{height:1px; background:var(--rule); border:0; margin:0}
+
+/* ---------- 直排題簽 ---------- */
+.tab{display:none}
+.eyebrow{
+  font-size:12px; letter-spacing:.34em; color:var(--gold-ink);
+  font-weight:500; margin:0 0 18px; display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:""; width:26px; height:1px; background:var(--gold); flex:none}
+.eyebrow .n{font-family:var(--serif); font-variant-numeric:tabular-nums; letter-spacing:.08em}
+.pine .eyebrow{color:var(--gold)}
+@media (min-width:1024px){
+  .wrap{padding-left:112px}
+  .wrap--wide{padding-left:112px}
+  .eyebrow{display:none}
+  .tab{
+    display:flex; flex-direction:column; align-items:center; gap:14px;
+    position:absolute; left:34px; top:clamp(72px,10vw,148px); width:34px;
+    user-select:none;
+  }
+  .tab .n{
+    font-family:var(--serif); font-weight:500; font-size:13px; color:var(--gold-ink);
+    font-variant-numeric:tabular-nums; letter-spacing:.06em;
+  }
+  .tab .line{width:1px; flex:none; height:clamp(48px,7vw,86px); background:linear-gradient(var(--gold),rgba(181,146,79,0))}
+  .tab .name{
+    writing-mode:vertical-rl; text-orientation:upright;
+    font-family:var(--serif); font-weight:500; font-size:17px;
+    letter-spacing:.34em; color:var(--ink-soft);
+  }
+  .pine .tab .n{color:var(--gold)}
+  .pine .tab .name{color:rgba(255,255,255,.82)}
+}
+
+/* ---------- 標題排版 ---------- */
+.h2{
+  font-family:var(--serif); font-weight:500; letter-spacing:.1em; line-height:1.35;
+  font-size:clamp(30px,4.4vw,52px); margin:0;
+}
+.h2-sub{
+  font-family:var(--sans); font-weight:300; font-size:14px; letter-spacing:.22em;
+  color:var(--ink-note); margin:16px 0 0;
+}
+.pine .h2-sub{color:rgba(255,255,255,.7)}
+.lead{font-size:16.5px; line-height:1.95; color:var(--ink-soft); max-width:38em}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- 頂部導覽 ---------- */
+.nav{
+  position:sticky; top:0; z-index:60; height:var(--nav-h);
+  background:rgba(246,242,234,.82); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-in{
+  max-width:1560px; margin:0 auto; height:100%; padding-inline:clamp(16px,4vw,40px);
+  display:flex; align-items:center; gap:clamp(14px,2.4vw,30px);
+  overflow-x:auto; scrollbar-width:none;
+}
+.nav-in::-webkit-scrollbar{display:none}
+.nav-mark{
+  font-family:var(--serif); font-weight:700; font-size:15px; letter-spacing:.3em;
+  flex:none; text-decoration:none; padding-right:6px;
+}
+.nav a.n-link{
+  flex:none; font-size:13px; letter-spacing:.2em; color:var(--ink-soft);
+  text-decoration:none; padding:4px 0; border-bottom:1px solid transparent; transition:color .2s, border-color .2s;
+}
+.nav a.n-link:hover{color:var(--ink)}
+.nav a.n-link[aria-current="true"]{color:var(--cinnabar); border-bottom-color:var(--cinnabar)}
+.skip{position:absolute; left:-9999px; top:0}
+.skip:focus{left:8px; top:8px; z-index:99; background:var(--paper); padding:8px 14px; border:1px solid var(--ink)}
+
+/* ---------- S1 hero ---------- */
+.hero{padding-top:clamp(48px,7vw,92px)}
+.hero-grid{display:grid; grid-template-columns:1fr; gap:clamp(36px,6vw,64px); align-items:start}
+@media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,60%) minmax(0,40%)}}
+.hero-title{display:flex; gap:clamp(18px,3vw,38px); align-items:flex-start}
+.hero-name{
+  writing-mode:vertical-rl; text-orientation:upright;
+  font-family:var(--serif); font-weight:900; font-size:clamp(48px,7.4vw,96px);
+  letter-spacing:.14em; line-height:1; margin:0; padding-left:clamp(14px,2vw,22px);
+  border-left:1px solid var(--gold); flex:none;
+}
+.hero-side{padding-top:6px}
+.hero-role{
+  font-size:13.5px; letter-spacing:.12em; color:var(--ink-soft); margin:0 0 22px; line-height:2.1;
+}
+.hero-role b{font-weight:500; color:var(--ink)}
+.hero-role .seg{white-space:nowrap}
+.hero-claim{
+  font-family:var(--serif); font-weight:300; font-size:clamp(21px,2.4vw,32px);
+  line-height:1.72; letter-spacing:.05em; margin:0; text-indent:-.5em;
+  max-width:none;
+}
+.hero-claim .ln{display:block; white-space:nowrap}
+.hero-claim .ln+.ln{text-indent:0}
+.hero-claim .ln:nth-child(2){padding-left:1.1em}
+.hero-claim .ln:nth-child(3){padding-left:2.2em}
+@media (max-width:520px){
+  .hero-claim .ln:nth-child(2),.hero-claim .ln:nth-child(3){padding-left:0}
+}
+.hero-claim em{font-style:normal; color:var(--cinnabar)}
+.stats{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:26px clamp(18px,3vw,34px);
+  margin-top:clamp(44px,6vw,72px); padding-top:26px; border-top:1px solid var(--rule);
+}
+@media (min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat dt{
+  font-family:var(--serif); font-weight:700; font-size:clamp(30px,3.6vw,42px);
+  line-height:1.1; letter-spacing:.02em; font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.stat dt .u{font-size:15px; font-weight:500; letter-spacing:.1em; margin-left:.35em}
+.stat dd{margin:10px 0 0; font-size:12.5px; letter-spacing:.16em; color:var(--ink-note); font-weight:300}
+.stat--red dt{color:var(--cinnabar)}
+.hero-photo{position:relative; justify-self:center}
+.hero-photo .mat{
+  background:#fff; padding:12px; border:1px solid var(--rule);
+  transform:rotate(-1.6deg); max-width:302px;
+}
+.hero-photo .mat img{width:100%; height:auto}
+.hero-photo::after{
+  content:""; position:absolute; inset:-14px -14px 14px 14px; border:1px solid var(--gold);
+  transform:rotate(-1.6deg); pointer-events:none; z-index:-1;
+}
+.hero-photo figcaption{
+  margin-top:22px; font-size:12px; letter-spacing:.14em; color:var(--ink-note); text-align:center; max-width:330px;
+}
+.scroll-cue{margin-top:clamp(34px,4vw,52px); display:flex; align-items:center; gap:14px}
+.scroll-cue .l{width:1px; height:54px; background:linear-gradient(var(--gold),rgba(181,146,79,0))}
+.scroll-cue span{font-size:11.5px; letter-spacing:.3em; color:var(--gold-ink); writing-mode:vertical-rl}
+
+/* ---------- S2 副總統手稿 ---------- */
+.ms-grid{display:grid; grid-template-columns:1fr; gap:clamp(40px,6vw,72px); align-items:center}
+@media (min-width:900px){.ms-grid{grid-template-columns:minmax(0,38%) minmax(0,62%)}}
+.ms-photo{margin:0; justify-self:center}
+.ms-photo .mat{background:#fff; padding:14px; border:1px solid rgba(181,146,79,.55); transform:rotate(-1.5deg); max-width:340px}
+.ms-photo .mat img{width:100%; height:auto}
+.ms-quote{
+  font-family:var(--serif); font-weight:300; color:#fff;
+  font-size:clamp(28px,4.6vw,52px); line-height:1.6; letter-spacing:.06em; margin:0; text-indent:-.5em;
+}
+.ms-by{margin:30px 0 0; font-size:13px; letter-spacing:.14em; color:var(--gold); font-variant-numeric:tabular-nums}
+.ms-note{
+  margin:34px 0 0; padding-top:26px; border-top:1px solid rgba(255,255,255,.18);
+  font-size:14.5px; line-height:2; color:rgba(255,255,255,.72); max-width:36em; font-weight:300;
+}
+
+/* ---------- S3 生命故事 ---------- */
+.acts{margin-top:clamp(48px,7vw,88px); display:flex; flex-direction:column; gap:clamp(56px,8vw,110px)}
+.act{display:grid; grid-template-columns:1fr; gap:clamp(26px,4vw,54px); align-items:center}
+@media (min-width:820px){
+  .act{grid-template-columns:minmax(0,300px) minmax(0,1fr)}
+  .act:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,300px)}
+  .act:nth-child(even) .act-photo{order:2}
+}
+.act-photo{margin:0 auto; max-width:320px}
+@media (min-width:820px){.act-photo{margin:0}}
+.act-photo .mat{background:#fff; padding:9px; border:1px solid var(--rule)}
+.act-photo .mat img{width:100%; height:auto}
+.act-photo figcaption{margin-top:14px; font-size:12px; line-height:1.8; letter-spacing:.08em; color:var(--ink-note)}
+.act-no{
+  font-family:var(--serif); font-weight:500; font-size:15px; letter-spacing:.4em;
+  color:var(--gold-ink); display:flex; align-items:center; gap:12px; margin:0 0 14px;
+}
+.act-no::after{content:""; height:1px; flex:1; background:var(--gold); opacity:.5}
+.act-name{font-family:var(--serif); font-weight:500; font-size:clamp(21px,2.6vw,30px); letter-spacing:.08em; margin:0 0 20px; line-height:1.5}
+.act-body{margin:0; font-size:15.5px; line-height:2.05; color:var(--ink-soft); max-width:36em}
+.act-body q{quotes:"「" "」"; color:var(--ink); font-weight:400}
+
+/* ---------- S4 發心 ---------- */
+.sutra{max-width:34em; margin:0 auto; text-align:justify}
+.sutra .h2{text-align:center; font-weight:300; font-size:clamp(30px,4.6vw,56px)}
+.sutra-body{margin-top:clamp(48px,7vw,84px); display:flex; flex-direction:column; gap:clamp(38px,5.5vw,64px)}
+.sutra-body p{margin:0; font-size:16px; line-height:2.15; color:var(--ink-soft)}
+.sutra-body p:first-child{font-size:17.5px; color:var(--ink)}
+.sutra-body q{quotes:"「" "」"; color:var(--ink); font-weight:400}
+.vow{margin-top:clamp(56px,8vw,96px); text-align:center}
+.vow .l{height:1px; background:var(--gold); opacity:.7; margin-bottom:28px}
+.vow span{font-family:var(--serif); font-weight:500; font-size:15px; letter-spacing:.5em; color:var(--cinnabar)}
+
+/* ---------- S5 照片牆 ---------- */
+.wall-head{display:flex; flex-wrap:wrap; gap:18px 40px; align-items:flex-end; justify-content:space-between}
+.scale{margin-top:clamp(40px,5vw,64px)}
+.scale-line{position:relative; height:1px; background:var(--gold); opacity:.75}
+.scale-marks{display:flex; justify-content:space-between; margin-top:0}
+.scale-mark{display:flex; flex-direction:column; align-items:center; gap:8px; flex:none; width:70px; margin-top:-1px}
+.scale-mark .t{width:1px; height:11px; background:var(--gold)}
+.scale-mark .y{font-family:var(--serif); font-weight:500; font-size:14px; letter-spacing:.12em; font-variant-numeric:tabular-nums; color:var(--ink)}
+.scale-mark .c{font-size:11px; letter-spacing:.12em; color:var(--ink-note); font-variant-numeric:tabular-nums}
+.scale-mark:first-child{align-items:flex-start}
+.scale-mark:last-child{align-items:flex-end}
+.scale-note{margin:16px 0 0; font-size:11.5px; letter-spacing:.14em; color:var(--ink-note)}
+.filters{
+  margin-top:clamp(36px,5vw,56px); padding-block:20px;
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  display:flex; flex-wrap:wrap; gap:8px 6px; align-items:center;
+}
+.f-btn{
+  font-family:var(--sans); font-weight:300; font-size:13px; letter-spacing:.16em;
+  color:var(--ink-soft); background:transparent; border:1px solid transparent;
+  padding:6px 14px; cursor:pointer; transition:color .2s, border-color .2s;
+}
+.f-btn:hover{color:var(--ink); border-color:var(--rule)}
+.f-btn .k{font-size:10.5px; color:var(--ink-note); margin-left:.5em; font-variant-numeric:tabular-nums}
+.f-btn[aria-pressed="true"]{color:#fff; background:var(--cinnabar); border-color:var(--cinnabar); font-weight:400}
+.f-btn[aria-pressed="true"] .k{color:rgba(255,255,255,.75)}
+.f-status{margin:16px 0 0; font-size:12px; letter-spacing:.14em; color:var(--ink-note); font-variant-numeric:tabular-nums}
+.wall{
+  margin-top:26px; display:grid; grid-template-columns:repeat(2,1fr);
+  grid-auto-rows:4px; gap:12px; list-style:none; padding:0;
+}
+@media (min-width:700px){.wall{grid-template-columns:repeat(3,1fr); gap:16px}}
+@media (min-width:992px){.wall{grid-template-columns:repeat(4,1fr); gap:18px}}
+@media (min-width:1200px){.wall{grid-template-columns:repeat(5,1fr); gap:22px}}
+.wall li{display:block}
+.wall li[hidden]{display:none}
+.tile{
+  display:block; width:100%; height:100%; padding:5px; background:#fff;
+  border:1px solid var(--rule); cursor:pointer; position:relative; overflow:hidden;
+  font:inherit; color:inherit; text-align:left; transition:border-color .25s;
+}
+.tile:hover{border-color:rgba(22,21,15,.34)}
+.tile-inner{position:relative; width:100%; height:100%; overflow:hidden; background:var(--paper-2)}
+.tile img{width:100%; height:100%; object-fit:cover}
+.cap{
+  position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; gap:6px;
+  padding:14px 13px; background:linear-gradient(to top,rgba(22,21,15,.92) 0%,rgba(22,21,15,.78) 55%,rgba(22,21,15,.28) 100%);
+  color:#fff; opacity:0; transform:translateY(6px); transition:opacity .3s ease-out, transform .3s ease-out;
+}
+.cap .d{font-size:11px; letter-spacing:.14em; color:var(--gold); font-variant-numeric:tabular-nums; font-family:var(--serif)}
+.cap .c{
+  font-size:12.5px; line-height:1.6; letter-spacing:.02em; font-weight:300; margin:0;
+  display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;
+}
+.tile:hover .cap,.tile:focus-visible .cap{opacity:1; transform:none}
+.wall-foot{margin:clamp(28px,4vw,44px) 0 0; font-size:12px; letter-spacing:.1em; color:var(--ink-note)}
+
+/* ---------- 燈箱 ---------- */
+.lb{
+  position:fixed; inset:0; z-index:100; background:#0E0D0A;
+  display:flex; flex-direction:column; padding:clamp(14px,3vw,34px);
+}
+.lb[hidden]{display:none}
+.lb-bar{display:flex; align-items:center; justify-content:space-between; gap:16px; flex:none}
+.lb-count{font-size:12px; letter-spacing:.18em; color:var(--gold); font-variant-numeric:tabular-nums; font-family:var(--serif)}
+.lb-btn{
+  background:transparent; border:1px solid rgba(255,255,255,.3); color:#fff; cursor:pointer;
+  font:inherit; font-size:12px; letter-spacing:.18em; padding:8px 16px; transition:background-color .2s, border-color .2s;
+}
+.lb-btn:hover{background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.6)}
+.lb-stage{flex:1; display:flex; align-items:center; justify-content:center; gap:clamp(10px,2vw,26px); min-height:0; padding-block:18px}
+.lb-nav{
+  flex:none; width:46px; height:46px; border:1px solid rgba(255,255,255,.3); background:transparent;
+  color:#fff; cursor:pointer; font-family:var(--serif); font-size:20px; line-height:1;
+  display:flex; align-items:center; justify-content:center; transition:background-color .2s, border-color .2s;
+}
+.lb-nav:hover{background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.6)}
+.lb-fig{margin:0; min-width:0; display:flex; flex-direction:column; align-items:center; gap:20px; max-height:100%}
+.lb-fig .mat{background:#fff; padding:10px; flex:1; min-height:0; display:flex}
+.lb-fig img{max-width:100%; max-height:66vh; width:auto; height:auto; object-fit:contain}
+.lb-cap{text-align:center; max-width:44em; color:#fff}
+.lb-cap .d{font-size:12px; letter-spacing:.2em; color:var(--gold); font-variant-numeric:tabular-nums; font-family:var(--serif)}
+.lb-cap .c{margin:10px 0 0; font-size:14.5px; line-height:1.9; font-weight:300; color:rgba(255,255,255,.88)}
+.lb-cap .t{margin:12px 0 0; font-size:11px; letter-spacing:.24em; color:rgba(255,255,255,.5)}
+@media (max-width:640px){.lb-fig img{max-height:52vh} .lb-nav{width:40px; height:40px}}
+
+/* ---------- S6 榮譽 ---------- */
+.two{display:grid; grid-template-columns:1fr; gap:clamp(44px,6vw,0px); margin-top:clamp(44px,6vw,72px)}
+@media (min-width:860px){.two{grid-template-columns:1fr 1fr; gap:0}
+  .two > *:last-child{padding-left:clamp(36px,5vw,64px); border-left:1px solid var(--gold)}
+  .two > *:first-child{padding-right:clamp(36px,5vw,64px)}}
+.col-h{font-family:var(--serif); font-weight:500; font-size:19px; letter-spacing:.24em; margin:0 0 24px}
+.list{list-style:none; margin:0; padding:0}
+.list li{
+  padding:16px 0 16px 34px; border-bottom:1px solid var(--rule); position:relative;
+  font-size:15px; line-height:1.85; color:var(--ink-soft);
+}
+.list li:first-child{border-top:1px solid var(--rule)}
+.list li::before{
+  content:counter(li,decimal-leading-zero); counter-increment:li; position:absolute; left:0; top:18px;
+  font-family:var(--serif); font-size:11.5px; letter-spacing:.06em; color:var(--gold-ink); font-variant-numeric:tabular-nums;
+}
+.list{counter-reset:li}
+.list li q{quotes:"「" "」"; color:var(--ink)}
+.list-note{margin:18px 0 0; font-size:11.5px; letter-spacing:.1em; color:var(--ink-note)}
+
+/* ---------- S7 媒體 ---------- */
+.media{list-style:none; margin:clamp(44px,6vw,72px) 0 0; padding:0; border-top:1px solid var(--rule)}
+.media li{border-bottom:1px solid var(--rule)}
+.media a{
+  display:grid; grid-template-columns:1fr; gap:8px 28px; align-items:baseline;
+  padding:26px 0; text-decoration:none; position:relative; transition:color .2s;
+}
+@media (min-width:820px){.media a{grid-template-columns:210px 1fr 108px}}
+.media a::after{
+  content:""; position:absolute; left:0; bottom:-1px; height:1px; width:0; background:var(--gold); transition:width .45s ease-out;
+}
+.media a:hover::after,.media a:focus-visible::after{width:100%}
+.media .src{font-family:var(--serif); font-weight:700; font-size:16px; letter-spacing:.1em}
+.media .ttl{font-size:15px; line-height:1.8; color:var(--ink-soft); font-weight:300}
+.media a:hover .ttl{color:var(--ink)}
+.media .dt{font-size:12px; letter-spacing:.12em; color:var(--ink-note); font-variant-numeric:tabular-nums}
+@media (min-width:820px){.media .dt{text-align:right}}
+
+/* ---------- S8 BNI ---------- */
+.bni-lead{
+  margin:clamp(32px,4vw,48px) 0 0; font-family:var(--serif); font-weight:300;
+  font-size:clamp(19px,2.3vw,26px); line-height:1.95; letter-spacing:.04em; color:var(--ink); max-width:34em;
+}
+.three{display:grid; grid-template-columns:1fr; gap:0; margin-top:clamp(48px,6vw,76px); border-top:1px solid var(--gold)}
+.three > div{padding:32px 0; border-bottom:1px solid var(--rule)}
+@media (min-width:860px){
+  .three{grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--rule)}
+  .three > div{padding:36px clamp(24px,3vw,40px); border-bottom:0; border-left:1px solid var(--gold)}
+  .three > div:first-child{padding-left:0; border-left:0}
+  .three > div:last-child{padding-right:0}
+}
+.three h3{font-family:var(--serif); font-weight:500; font-size:17px; letter-spacing:.2em; margin:0 0 18px}
+.three p{margin:0; font-size:14.5px; line-height:2; color:var(--ink-soft)}
+.bni-tag{margin:26px 0 0; font-size:11.5px; letter-spacing:.24em; color:var(--ink-note)}
+
+/* ---------- S9 結語 ---------- */
+.end-q{
+  font-family:var(--serif); font-weight:300; color:#fff; margin:0; text-indent:-.5em;
+  font-size:clamp(24px,3.8vw,46px); line-height:1.72; letter-spacing:.05em; max-width:20em;
+}
+.contact{
+  list-style:none; margin:clamp(52px,7vw,84px) 0 0; padding:0; border-top:1px solid rgba(255,255,255,.2);
+  display:grid; grid-template-columns:1fr; gap:0;
+}
+@media (min-width:760px){.contact{grid-template-columns:1fr 1fr}}
+.contact li{padding:20px 0; border-bottom:1px solid rgba(255,255,255,.14); display:flex; gap:20px; align-items:baseline}
+@media (min-width:760px){.contact li:nth-child(odd){padding-right:40px} .contact li:nth-child(even){padding-left:40px; border-left:1px solid rgba(255,255,255,.14)}}
+.contact .k{flex:none; width:5.2em; font-size:11.5px; letter-spacing:.22em; color:var(--gold)}
+.contact .v{font-size:14.5px; letter-spacing:.04em; color:rgba(255,255,255,.9); word-break:break-word; font-variant-numeric:tabular-nums}
+.contact a.v{text-decoration:none; border-bottom:1px solid rgba(255,255,255,.28); transition:border-color .2s, color .2s}
+.contact a.v:hover{color:#fff; border-bottom-color:var(--gold)}
+.foot{margin:clamp(44px,6vw,64px) 0 0; font-size:11.5px; letter-spacing:.12em; color:rgba(255,255,255,.55)}
+
+/* ---------- 進場 ---------- */
+.rv{opacity:0; transform:translateY(6px); transition:opacity .4s ease-out, transform .4s ease-out}
+.rv.in{opacity:1; transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important}
+  .rv{transform:none !important}
+  .cap{transform:none !important; transition:opacity .001ms !important}
+  .hero-photo .mat,.hero-photo::after,.ms-photo .mat{transform:none !important}
+  html{scroll-behavior:auto}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<a class="skip" href="#s5">跳至照片牆</a>
+
+<nav class="nav" aria-label="章節導覽">
+  <div class="nav-in">
+    <a class="nav-mark" href="#s1">林貝羿</a>
+    <a class="n-link" href="#s1">卷首</a>
+    <a class="n-link" href="#s2">嘉勉</a>
+    <a class="n-link" href="#s3">生命故事</a>
+    <a class="n-link" href="#s4">發心</a>
+    <a class="n-link" href="#s5">歷史足跡</a>
+    <a class="n-link" href="#s6">榮譽</a>
+    <a class="n-link" href="#s7">媒體</a>
+    <a class="n-link" href="#s8">宏觀分會</a>
+    <a class="n-link" href="#s9">聯絡</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ S1 ============ -->
+<section class="sec hero" id="s1">
+  <div class="tab" aria-hidden="true"><span class="n">01</span><span class="line"></span><span class="name">卷首</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">01</span>卷首</p>
+    <div class="hero-grid">
+      <div class="rv">
+        <div class="hero-title">
+          <h1 class="hero-name">林貝羿</h1>
+          <div class="hero-side">
+            <p class="hero-role"><span class="seg"><b>逸心生技創辦人</b></span> ｜ <span class="seg">「淳清淨」品牌主理人</span> ｜ <span class="seg"><span class="num">21</span> 年資深媒體人</span></p>
+            <p class="hero-claim"><span class="ln">「以絕對負責的態度，</span><span class="ln">做對的產品，</span><span class="ln">成就<em>善良的人生</em>。」</span></p>
+          </div>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt><span class="num">21</span><span class="u">年</span></dt><dd>電視台媒體生涯</dd></div>
+          <div class="stat"><dt><span class="num">2019</span></dt><dd>創立逸心生技</dd></div>
+          <div class="stat"><dt><span class="num">40+</span><span class="u">場</span></dt><dd>有紀錄的公益足跡</dd></div>
+          <div class="stat stat--red"><dt><span class="num">3000</span><span class="u">包</span></dt><dd>單次捐贈第一線醫護</dd></div>
+        </dl>
+        <div class="scroll-cue" aria-hidden="true"><span class="l"></span><span>往下</span></div>
+      </div>
+      <figure class="hero-photo rv">
+        <div class="mat">
+          <img src="assets/photos/w39.jpg" width="184" height="184" loading="lazy" decoding="async" alt="林貝羿的人物照：把健康「喝」回來——她親身走過的那條路。">
+        </div>
+        <figcaption>把健康「喝」回來——她親身走過的那條路。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S2 ============ -->
+<section class="sec pine" id="s2">
+  <div class="tab" aria-hidden="true"><span class="n">02</span><span class="line"></span><span class="name">嘉勉</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">02</span>嘉勉</p>
+    <div class="ms-grid">
+      <figure class="ms-photo rv">
+        <div class="mat">
+          <img src="assets/photos/w40.jpg" width="289" height="425" loading="lazy" decoding="async" alt="賴清德副總統親筆手稿：「貝羿小姐，熱血志業，加油！」">
+        </div>
+      </figure>
+      <div class="rv">
+        <blockquote class="ms-quote">「貝羿小姐，熱血志業，加油！」</blockquote>
+        <p class="ms-by">— 賴清德副總統 親筆嘉勉．<span class="num">2021.03.28</span> 總統府</p>
+        <p class="ms-note"><span class="num">2021</span> 年 <span class="num">3</span> 月 <span class="num">28</span> 日，她帶著先生與孩子走進總統府南苑，參與「歲末年歡・親親寶貝同樂會」，佈展、捐款，並捐贈 <span class="num">1900</span> 包「淳清淨」給到場的身心障礙孩童。當天，她獲頒「慈善家」獎牌。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S3 ============ -->
+<section class="sec" id="s3">
+  <div class="tab" aria-hidden="true"><span class="n">03</span><span class="line"></span><span class="name">故事</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">03</span>生命故事</p>
+    <header class="rv">
+      <h2 class="h2">生命故事</h2>
+      <p class="h2-sub">從螢光幕後，到把健康喝回來</p>
+    </header>
+    <div class="acts">
+
+      <article class="act rv">
+        <figure class="act-photo">
+          <div class="mat"><img src="assets/photos/w38.jpg" width="289" height="425" loading="lazy" decoding="async" alt="「女性創業沙龍」講者，分享創業家產品開發的美麗與哀愁，鼓勵創業家注重社會責任。"></div>
+          <figcaption>「女性創業沙龍」講者，分享創業家產品開發的美麗與哀愁。</figcaption>
+        </figure>
+        <div>
+          <p class="act-no">一</p>
+          <h3 class="act-name">二十一年的螢光幕後</h3>
+          <p class="act-body">她在電視台待了二十一年。新聞的節奏是不等人的，機器一開就沒有暫停鍵，長期的工作壓力加上日夜顛倒的作息，讓身體先發出了警告：膽固醇超標、精神差、便祕、手麻、膝蓋退化，大小病痛沒有停過。那是一段用健康去換專業的日子，她很清楚自己在換什麼，卻沒有辦法停下來。</p>
+        </div>
+      </article>
+
+      <article class="act rv">
+        <figure class="act-photo">
+          <div class="mat"><img src="assets/photos/w35.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="探訪長者，把一包好食物親手交到他手裡。"></div>
+          <figcaption>探訪長者，把一包好食物親手交到他手裡。</figcaption>
+        </figure>
+        <div>
+          <p class="act-no">二</p>
+          <h3 class="act-name">那一場病，與那一次告別</h3>
+          <p class="act-body">真正讓她停下來的，是家裡的事。公公因癌症離世，而她自己曾經突然支氣管痙攣、無法呼吸——<q>那個面對死亡的恐懼，是一輩子都不會忘記的。</q>她說。人到了那個當口，會突然看清楚什麼是重要的。她辭去了電視台的工作，離開熟悉的舒適圈，開始一頭栽進自然食材與菌叢生態的研究裡。</p>
+        </div>
+      </article>
+
+      <article class="act rv">
+        <figure class="act-photo">
+          <div class="mat"><img src="assets/photos/w37.jpg" width="340" height="340" loading="lazy" decoding="async" alt="驗貨監工——堅持每一道製程都對得起良心。"></div>
+          <figcaption>驗貨監工——堅持每一道製程都對得起良心。</figcaption>
+        </figure>
+        <div>
+          <p class="act-no">三</p>
+          <h3 class="act-name">把健康「喝」回來，把善傳下去</h3>
+          <p class="act-body">她從原型食材下手，選埔里有機黑木耳、有機枸杞，結合傳統製法與破壁技術，做出「淳清淨 枸杞有機桑耳萃」。產品取得有機認證，並自主送 SGS 檢驗，未檢出農藥殘留與重金屬。她自己先把健康喝了回來，然後許下一個志願：不只要活得健康，還要幫助更多人好好活著。從那天起，她的公司和她的公益，就沒有分開過。</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ S4 ============ -->
+<section class="sec" id="s4">
+  <div class="tab" aria-hidden="true"><span class="n">04</span><span class="line"></span><span class="name">發心</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">04</span>發心</p>
+    <div class="sutra rv">
+      <h2 class="h2">慈悲，是聽見了就走過去</h2>
+      <div class="sutra-body">
+        <p>她信奉觀世音菩薩。觀音的願，是聞聲救苦——聽見了，就走過去。這四個字幾乎可以拿來解釋她這幾年做的每一件事。</p>
+        <p>所以她探訪獨居長輩時不急著送東西，先坐下來聽；所以她會為了一個護理長在群組裡的一句話，當天決定捐出三千包；所以女兒第一次擺攤義賣、第一次包粽送給弱勢族群，她讓孩子自己去經歷，而不是替孩子做完。善不是一次性的施捨，是日常裡一個接一個的選擇。</p>
+        <p>她常說：<q>真正的付出，不是分享多餘，而是願意割捨原本擁有的。</q>也說：<q>付出及共善，最終都會回到自己身上。</q></p>
+        <p>這份發心，最後長成了一間公司的樣子——以絕對負責的態度，做對的產品，成就善良的人生。做對的產品是本分，成就善良的人生才是願。</p>
+      </div>
+      <div class="vow"><div class="l"></div><span>發願 ・ 行願 ・ 還願</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S5 照片牆 ============ -->
+<section class="sec paper2" id="s5">
+  <div class="tab" aria-hidden="true"><span class="n">05</span><span class="line"></span><span class="name">足跡</span></div>
+  <div class="wrap wrap--wide">
+    <p class="eyebrow"><span class="n">05</span>歷史足跡</p>
+    <div class="wall-head rv">
+      <div>
+        <h2 class="h2">歷史足跡</h2>
+        <p class="h2-sub"><span class="num">2018 → 2021</span>，<span class="num">54</span> 幀有紀錄的日子</p>
+      </div>
+      <p class="lead" style="max-width:26em;margin:0;font-size:14.5px">善不是一次性的施捨，是日常裡一個接一個的選擇。這面牆上的每一幀，都有日期、有名字、有一件真的做過的事。</p>
+    </div>
+
+    <div class="scale rv" aria-hidden="true">
+      <div class="scale-line"></div>
+      <div class="scale-marks" id="scaleMarks"></div>
+      <p class="scale-note" id="scaleNote"></p>
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="依分類篩選照片"></div>
+    <p class="f-status" id="fStatus" role="status" aria-live="polite"></p>
+
+    <ul class="wall" id="wall"></ul>
+
+    <p class="wall-foot">照片與說明整理自「淳清淨」官方網站公開紀錄（<span class="num">2018–2021</span>）。</p>
+  </div>
+</section>
+
+<!-- ============ S6 ============ -->
+<section class="sec" id="s6">
+  <div class="tab" aria-hidden="true"><span class="n">06</span><span class="line"></span><span class="name">榮譽</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">06</span>榮譽與認證</p>
+    <header class="rv">
+      <h2 class="h2">榮譽與認證</h2>
+      <p class="h2-sub">別人給的肯定，與自己送去檢驗的底氣</p>
+    </header>
+    <div class="two rv">
+      <div>
+        <h3 class="col-h">榮譽</h3>
+        <ul class="list">
+          <li>賴清德副總統頒贈「慈善家」獎牌（<span class="num">2021</span> 總統府公益活動）</li>
+          <li>副總統親筆嘉勉：<q>貝羿小姐，熱血志業，加油！</q></li>
+          <li><span class="num">2021</span> 華人公益節「公益大使」</li>
+          <li>台灣工商總會 生技醫療委員會 常務委員</li>
+          <li>「女性創業沙龍」受邀講者</li>
+          <li>二重國中 <span class="num">109</span> 學年度《生涯領航員》講師</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="col-h">產品與專業認證</h3>
+        <ul class="list">
+          <li>有機農產品驗證</li>
+          <li>SGS 檢驗：未檢出農藥殘留</li>
+          <li>SGS 檢驗：未檢出重金屬</li>
+          <li>「淳清淨」中華民國商標註冊</li>
+          <li>自主管理・營養標示測試報告</li>
+          <li>國立台北護理健康大學「明星健康管理師」結訓</li>
+          <li>產品責任險 <span class="num">3000</span> 萬</li>
+        </ul>
+        <p class="list-note">投保金額不等同於理賠金額。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ S7 ============ -->
+<section class="sec" id="s7">
+  <div class="tab" aria-hidden="true"><span class="n">07</span><span class="line"></span><span class="name">媒體</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">07</span>媒體報導</p>
+    <header class="rv">
+      <h2 class="h2">媒體報導</h2>
+      <p class="h2-sub">公開紀錄，可以自己去看</p>
+    </header>
+    <ul class="media rv">
+      <li><a href="https://www.peopo.org/news/525105" target="_blank" rel="noopener">
+        <span class="src">PeoPo 公民新聞</span>
+        <span class="ttl">以絕對負責的態度，做對的產品，成就善良的人生！專訪～逸心生技創辦人林貝羿</span>
+        <span class="dt">2021.04.04</span></a></li>
+      <li><a href="https://www.peopo.org/news/532592" target="_blank" rel="noopener">
+        <span class="src">PeoPo 公民新聞</span>
+        <span class="ttl">我跟母親在西門紅樓抱抱</span>
+        <span class="dt">2021.05</span></a></li>
+      <li><a href="https://www.setn.com/News.aspx?NewsID=919573" target="_blank" rel="noopener">
+        <span class="src">三立新聞網 SETN</span>
+        <span class="ttl">提升免疫力的美容聖品　黑木耳好處多多</span>
+        <span class="dt"></span></a></li>
+      <li><a href="https://findit.sme.gov.tw/tw/Startup/cU9oVXFETGFLNGx5VHdmeEYzTmREZz09/Basic" target="_blank" rel="noopener">
+        <span class="src">FINDIT 臺灣新創資訊平台</span>
+        <span class="ttl">逸心生技股份有限公司 企業檔案（經濟部中小及新創企業署）</span>
+        <span class="dt"></span></a></li>
+      <li><a href="https://www.achievement17.com/" target="_blank" rel="noopener">
+        <span class="src">淳清淨 官方網站</span>
+        <span class="ttl">生命成就・美好的一天</span>
+        <span class="dt"></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ S8 ============ -->
+<section class="sec paper2" id="s8">
+  <div class="tab" aria-hidden="true"><span class="n">08</span><span class="line"></span><span class="name">宏觀</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">08</span>宏觀分會</p>
+    <header class="rv">
+      <h2 class="h2">在宏觀分會，她能為你做的事</h2>
+      <p class="bni-lead">二十一年的媒體訓練，讓她習慣先聽懂別人的故事，再決定怎麼說。這正是引薦最需要的能力——聽見對方真正的需要，再把對的人帶到對的人面前。</p>
+    </header>
+    <div class="three rv">
+      <div>
+        <h3>她的專業</h3>
+        <p>健康飲品與自然食材（益生質・菌叢生態）、品牌與產品開發、通路與企業贈禮。</p>
+      </div>
+      <div>
+        <h3>她的能力</h3>
+        <p><span class="num">21</span> 年電視台媒體歷練——採訪、企劃、簡報、公關溝通、活動執行與媒體曝光。</p>
+      </div>
+      <div>
+        <h3>她想認識的人</h3>
+        <p>診所與健康通路、企業福委與採購、公益團體與社福單位、生技與食品同業、想把品牌說清楚的創業者。</p>
+      </div>
+    </div>
+    <p class="bni-tag">BNI 桃園 D 區・宏觀分會</p>
+  </div>
+</section>
+
+<!-- ============ S9 ============ -->
+<section class="sec pine" id="s9">
+  <div class="tab" aria-hidden="true"><span class="n">09</span><span class="line"></span><span class="name">聯絡</span></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="n">09</span>結語與聯絡</p>
+    <div class="rv">
+      <blockquote class="end-q">「真正的付出，不是分享多餘，而是願意割捨原本擁有。」</blockquote>
+      <ul class="contact">
+        <li><span class="k">公司</span><span class="v">逸心生技股份有限公司（統一編號 <span class="num">82812879</span>）</span></li>
+        <li><span class="k">官方網站</span><a class="v" href="https://www.achievement17.com/" target="_blank" rel="noopener">www.achievement17.com</a></li>
+        <li><span class="k">Instagram</span><a class="v" href="https://www.instagram.com/l_beiyi/" target="_blank" rel="noopener">@l_beiyi</a></li>
+        <li><span class="k">Email</span><a class="v" href="mailto:beiyi.taipei@gmail.com">beiyi.taipei@gmail.com</a></li>
+        <li><span class="k">電話</span><a class="v" href="tel:+886932321719">0932-321719</a></li>
+        <li><span class="k">LINE</span><span class="v">@481xcevf</span></li>
+      </ul>
+      <p class="foot">本頁內容整理自公開報導與「淳清淨」官方網站公開資訊。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 燈箱 ============ -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="照片檢視" aria-describedby="lbCap">
+  <div class="lb-bar">
+    <p class="lb-count" id="lbCount"></p>
+    <button type="button" class="lb-btn" id="lbClose">關閉 ESC</button>
+  </div>
+  <div class="lb-stage">
+    <button type="button" class="lb-nav" id="lbPrev" aria-label="上一張照片">〈</button>
+    <figure class="lb-fig">
+      <div class="mat"><img id="lbImg" src="" alt=""></div>
+      <figcaption class="lb-cap" id="lbCap">
+        <p class="d" id="lbDate"></p>
+        <p class="c" id="lbText"></p>
+        <p class="t" id="lbCat"></p>
+      </figcaption>
+    </figure>
+    <button type="button" class="lb-nav" id="lbNext" aria-label="下一張照片">〉</button>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* 54 幀紀錄（內嵌，避免 file:// 下 fetch 失效） */
+const PHOTOS = [
+ {
+  "file": "photos/w00.jpg",
+  "date": "2018.12.02",
+  "caption": "「毛小孩幸福農場」替毛小孩梳毛，人與毛小孩有趣的沉思畫面。",
+  "cat": "弱勢關懷",
+  "w": 184,
+  "h": 184
+ },
+ {
+  "file": "photos/w01.jpg",
+  "date": "2019.12.28",
+  "caption": "與女兒一起探訪萬華的獨居老人，懂得傾聽，也是一種關懷。",
+  "cat": "長者關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w02.jpg",
+  "date": "2020.01.18",
+  "caption": "總統府歲末聯歡「活力寶貝共團圓」公益活動，做自己想做的事。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w03.jpg",
+  "date": "2020.01.25",
+  "caption": "汐止火車站送便當，女兒幫忙討開水給老人家喝。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w04.jpg",
+  "date": "2020.05.09",
+  "caption": "西寧獨居老奶奶那張歡喜害羞的笑容——擁有歡喜心，一切皆自在。",
+  "cat": "長者關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w05.jpg",
+  "date": "2020.06.21",
+  "caption": "母女倆齊心包粽，送給弱勢族群。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w06.jpg",
+  "date": "2020.07.19",
+  "caption": "陪伴「關愛之家」的孩童，也讓善循環下去的夥伴們。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w07.jpg",
+  "date": "2020.09.06",
+  "caption": "探訪萬華獨老，教奶奶玩手機。",
+  "cat": "長者關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w08.jpg",
+  "date": "2020.10.11",
+  "caption": "被櫻花拉著陪她跳房子，這把老骨頭管不了規則，只能用力跳。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w09.jpg",
+  "date": "2020.11.11",
+  "caption": "雙11響應捐血活動。心中有愛，自然喜悅。",
+  "cat": "捐血捐髮",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w10.jpg",
+  "date": "2020.11.15",
+  "caption": "幫「土城張媽媽」拆除狗屋，這是一個很重的喜悅啊！",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w11.jpg",
+  "date": "2020.11.28",
+  "caption": "在久號市集認一個攤位，支持女兒及同學的第一次益賣活動。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w12.jpg",
+  "date": "2020.12.20",
+  "caption": "陪伴「關愛之家」的孩子一起聖誕趴，討抱的孩子不想被放下來。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w13.jpg",
+  "date": "2020.12.27",
+  "caption": "汐止火車站，看著他們吃便當，忍不住也吃起來。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w14.jpg",
+  "date": "2021.01.03",
+  "caption": "與夥伴一起佈展「就是礙創作」——脊髓損傷者用口繪油畫，畫出自己的生命力。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w15.jpg",
+  "date": "2021.01.05",
+  "caption": "理事長說募款辛苦，公司產品還沒有收入，但對的事就該響應。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w16.jpg",
+  "date": "2021.01.17",
+  "caption": "探訪新竹寶山偏鄉獨居老人。只有懂得惜福，才能懂幸福。",
+  "cat": "長者關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w17.jpg",
+  "date": "2021.02.17",
+  "caption": "支持屏東「飛夢林家園」，幫助中輟生翻轉人生。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w18.jpg",
+  "date": "2021.02.28",
+  "caption": "「就是礙創作」撤展，認識像陽光一樣的口畫藝術家。",
+  "cat": "弱勢關懷",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w19.jpg",
+  "date": "2021.03.17",
+  "caption": "這輩子唯一及腰的長度，捐出去，讓需要的人有歡喜心。",
+  "cat": "捐血捐髮",
+  "w": 998,
+  "h": 1000
+ },
+ {
+  "file": "photos/w20.jpg",
+  "date": "2021.03.19",
+  "caption": "國小孩子因為好玩而傷害同學，這真的需要教育。",
+  "cat": "孩童與校園",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w21.jpg",
+  "date": "2021.03.19",
+  "caption": "「張老師」1980 輔導專線——當你有困擾，別忘了有人陪你。",
+  "cat": "孩童與校園",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w22.jpg",
+  "date": "2021.03.21",
+  "caption": "捐血號碼牌從 37 號一路寫到 100 號，「捐血」兩個字越看越奇怪。",
+  "cat": "捐血捐髮",
+  "w": 227,
+  "h": 227
+ },
+ {
+  "file": "photos/w23.jpg",
+  "date": "2021.03.28",
+  "caption": "總統府歲末年歡，陪孩子一起在「手繪幸福卡」上蓋出愛心。",
+  "cat": "孩童與校園",
+  "w": 1000,
+  "h": 998
+ },
+ {
+  "file": "photos/w24.jpg",
+  "date": "2021.03.28",
+  "caption": "帶著先生與孩子走進總統府南苑，一家人一起做一件對的事。",
+  "cat": "品牌與講座",
+  "w": 1000,
+  "h": 1000
+ },
+ {
+  "file": "photos/w25.jpg",
+  "date": "2021",
+  "caption": "孩子畫下的「揮灑青春・五感心關照」。",
+  "cat": "孩童與校園",
+  "w": 1000,
+  "h": 999
+ },
+ {
+  "file": "photos/w26.jpg",
+  "date": "2021.05.14",
+  "caption": "走進二重國中擔任《生涯領航員》講師——幫助孩子的事，我願意付出。",
+  "cat": "孩童與校園",
+  "w": 651,
+  "h": 652
+ },
+ {
+  "file": "photos/w27.jpg",
+  "date": "2021.05.08",
+  "caption": "受邀參與首屆「大健康產學溫馨母親節博覽會」公益活動。",
+  "cat": "品牌與講座",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w28.jpg",
+  "date": "2021.05.21",
+  "caption": "疫情嚴峻，捐贈 3000 包給「和平醫院」第一線醫護人員。",
+  "cat": "醫護前線",
+  "w": 456,
+  "h": 456
+ },
+ {
+  "file": "photos/w29.jpg",
+  "date": "2021.05.21",
+  "caption": "感謝幫我卸貨的兒子，這革命情感更甚母子關係。",
+  "cat": "醫護前線",
+  "w": 1000,
+  "h": 1000
+ },
+ {
+  "file": "photos/w30.jpg",
+  "date": "2021.05",
+  "caption": "卸貨完畢，豔陽下與社工一起把物資送到需要的人手上。",
+  "cat": "醫護前線",
+  "w": 669,
+  "h": 669
+ },
+ {
+  "file": "photos/w31.jpg",
+  "date": "2021.05",
+  "caption": "一箱一箱搬下車，物資到位才安心。",
+  "cat": "醫護前線",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w32.jpg",
+  "date": "2021.06.19",
+  "caption": "疫情三級，戴好口罩到「阿基歐毛寶貝樂園」捐贈狗飼料。",
+  "cat": "弱勢關懷",
+  "w": 998,
+  "h": 1000
+ },
+ {
+  "file": "photos/w33.jpg",
+  "date": "2021",
+  "caption": "口罩下的眼睛，還是笑著的。",
+  "cat": "品牌與講座",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w34.jpg",
+  "date": "2021",
+  "caption": "走進廚房，陪長輩備一頓飯。",
+  "cat": "長者關懷",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w35.jpg",
+  "date": "2021",
+  "caption": "探訪長者，把一包好食物親手交到他手裡。",
+  "cat": "長者關懷",
+  "w": 1000,
+  "h": 1000
+ },
+ {
+  "file": "photos/w36.jpg",
+  "date": "2021",
+  "caption": "輪椅旁的那一包，是陪伴，也是掛念。",
+  "cat": "長者關懷",
+  "w": 1000,
+  "h": 999
+ },
+ {
+  "file": "photos/w37.jpg",
+  "date": "2021",
+  "caption": "驗貨監工——堅持每一道製程都對得起良心。",
+  "cat": "品牌與講座",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w38.jpg",
+  "date": "2021",
+  "caption": "「女性創業沙龍」講者，分享創業家產品開發的美麗與哀愁，鼓勵創業家注重社會責任。",
+  "cat": "品牌與講座",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w39.jpg",
+  "date": "2021",
+  "caption": "把健康「喝」回來——她親身走過的那條路。",
+  "cat": "品牌與講座",
+  "w": 184,
+  "h": 184
+ },
+ {
+  "file": "photos/w40.jpg",
+  "date": "2021.03.28",
+  "caption": "賴清德副總統親筆嘉勉：「貝羿小姐，熱血志業，加油！」",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w41.jpg",
+  "date": "2021.03.28",
+  "caption": "手稿原件，成為她持續前行的重要鼓舞。",
+  "cat": "榮譽與認證",
+  "w": 184,
+  "h": 184
+ },
+ {
+  "file": "photos/w42.jpg",
+  "date": "2021.03.28",
+  "caption": "總統府公益活動，榮獲賴清德副總統頒贈「慈善家」獎牌。",
+  "cat": "榮譽與認證",
+  "w": 683,
+  "h": 1000
+ },
+ {
+  "file": "photos/w43.jpg",
+  "date": "2021",
+  "caption": "「慈善家」——由善念換來的三個字。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w44.jpg",
+  "date": "2021",
+  "caption": "熱心公益、拋磚引玉，榮獲 2021 華人公益節「公益大使」。",
+  "cat": "榮譽與認證",
+  "w": 683,
+  "h": 1000
+ },
+ {
+  "file": "photos/w45.jpg",
+  "date": "2021",
+  "caption": "受聘擔任台灣工商總會「生技醫療委員會」常務委員。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w46.jpg",
+  "date": "2021",
+  "caption": "公益社團致贈的聘書與感謝。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w47.jpg",
+  "date": "2021",
+  "caption": "慈善基金會致贈的感謝狀。",
+  "cat": "榮譽與認證",
+  "w": 340,
+  "h": 340
+ },
+ {
+  "file": "photos/w48.jpg",
+  "date": "",
+  "caption": "有機農產品驗證標章。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w49.jpg",
+  "date": "",
+  "caption": "「淳清淨」中華民國商標註冊證。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w50.jpg",
+  "date": "",
+  "caption": "產品條碼與註冊資料。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w51.jpg",
+  "date": "",
+  "caption": "SGS 檢驗：未檢出農藥殘留。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w52.jpg",
+  "date": "",
+  "caption": "SGS 檢驗：未檢出重金屬。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ },
+ {
+  "file": "photos/w53.jpg",
+  "date": "",
+  "caption": "自主管理・營養標示測試報告。",
+  "cat": "榮譽與認證",
+  "w": 289,
+  "h": 425
+ }
+];
+
+const RM = window.matchMedia("(prefers-reduced-motion: reduce)");
+const $ = (id) => document.getElementById(id);
+
+/* ---------- 磚塊高低節奏：以原始比例為底，套一組固定的抖動係數 ---------- */
+const JITTER = [1, .84, 1.16, .93, 1.28, 1, .78, 1.08, .88, 1.2, .96, 1.34];
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const tileAR = (p, i) => clamp((p.w / p.h) * JITTER[i % JITTER.length], .62, 1.4);
+
+/* ---------- 建立照片牆 ---------- */
+const wall = $("wall");
+const frag = document.createDocumentFragment();
+const tiles = [];
+
+PHOTOS.forEach(function(p, i){
+  const li = document.createElement("li");
+  const label = (p.date ? p.date + "，" : "") + p.caption;
+
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "tile";
+  btn.dataset.ar = tileAR(p, i).toFixed(4);
+  btn.dataset.i = i;
+  btn.setAttribute("aria-label", "放大檢視：" + label);
+
+  const inner = document.createElement("div");
+  inner.className = "tile-inner";
+
+  const img = document.createElement("img");
+  img.src = "assets/" + p.file;
+  img.width = p.w; img.height = p.h;
+  img.loading = "lazy"; img.decoding = "async";
+  img.alt = label;
+
+  const cap = document.createElement("span");
+  cap.className = "cap";
+  cap.setAttribute("aria-hidden", "true");
+  const d = document.createElement("span");
+  d.className = "d";
+  d.textContent = p.date || "年份未標註";
+  const c = document.createElement("span");
+  c.className = "c";
+  c.textContent = p.caption;
+  cap.appendChild(d); cap.appendChild(c);
+
+  inner.appendChild(img); inner.appendChild(cap);
+  btn.appendChild(inner);
+  li.appendChild(btn);
+  frag.appendChild(li);
+  tiles.push({ li: li, btn: btn, p: p, i: i });
+});
+wall.appendChild(frag);
+
+/* ---------- 不規則磚牆排版（grid row-span） ---------- */
+const ROW = 4, PAD = 6; /* 4px 列高；5px 白邊 + 1px 髮絲線 */
+let rafId = null;
+function layout(){
+  rafId = null;
+  const cs = getComputedStyle(wall);
+  const gapC = parseFloat(cs.columnGap) || 12;
+  const gapR = parseFloat(cs.rowGap) || gapC;
+  const cols = cs.gridTemplateColumns.split(" ").filter(Boolean).length;
+  const colW = (wall.clientWidth - gapC * (cols - 1)) / cols;
+  if (colW <= 0) return;
+  tiles.forEach(function(t){
+    if (t.li.hidden) return;
+    const innerW = colW - PAD * 2;
+    const h = innerW / parseFloat(t.btn.dataset.ar) + PAD * 2;
+    t.li.style.gridRowEnd = "span " + Math.max(1, Math.round((h + gapR) / (ROW + gapR)));
+  });
+}
+function relayout(){ if (rafId === null) rafId = requestAnimationFrame(layout); }
+relayout();
+if (window.ResizeObserver) new ResizeObserver(relayout).observe(wall);
+else window.addEventListener("resize", relayout);
+window.addEventListener("load", relayout);
+document.fonts && document.fonts.ready && document.fonts.ready.then(relayout);
+
+/* ---------- 分類篩選 ---------- */
+const counts = new Map();
+PHOTOS.forEach(function(p){ counts.set(p.cat, (counts.get(p.cat) || 0) + 1); });
+const cats = Array.from(counts.keys());
+const filters = $("filters"), fStatus = $("fStatus");
+let current = "*";
+let visible = tiles.slice();
+
+function makeBtn(key, text, n){
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "f-btn";
+  b.dataset.cat = key;
+  b.setAttribute("aria-pressed", key === "*" ? "true" : "false");
+  b.appendChild(document.createTextNode(text));
+  const k = document.createElement("span");
+  k.className = "k";
+  k.textContent = n;
+  b.appendChild(k);
+  return b;
+}
+filters.appendChild(makeBtn("*", "全部", PHOTOS.length));
+cats.forEach(function(cat){ filters.appendChild(makeBtn(cat, cat, counts.get(cat))); });
+
+function applyFilter(cat){
+  current = cat;
+  Array.prototype.forEach.call(filters.children, function(b){
+    b.setAttribute("aria-pressed", b.dataset.cat === cat ? "true" : "false");
+  });
+  visible = [];
+  tiles.forEach(function(t){
+    const on = (cat === "*" || t.p.cat === cat);
+    t.li.hidden = !on;
+    if (on) visible.push(t);
+  });
+  fStatus.textContent = (cat === "*" ? "顯示全部 " : "顯示「" + cat + "」") + visible.length + " 幀";
+  relayout();
+}
+filters.addEventListener("click", function(e){
+  const b = e.target.closest(".f-btn");
+  if (b) applyFilter(b.dataset.cat);
+});
+applyFilter("*");
+
+/* ---------- 年份刻度 ---------- */
+(function(){
+  const years = ["2018", "2019", "2020", "2021"];
+  const yc = {}; let undated = 0;
+  PHOTOS.forEach(function(p){
+    const y = (p.date || "").slice(0, 4);
+    if (years.indexOf(y) >= 0) yc[y] = (yc[y] || 0) + 1; else undated++;
+  });
+  const marks = $("scaleMarks");
+  years.forEach(function(y){
+    const m = document.createElement("div");
+    m.className = "scale-mark";
+    m.innerHTML = '<span class="t"></span><span class="y">' + y + '</span><span class="c">' + (yc[y] || 0) + " 幀</span>";
+    marks.appendChild(m);
+  });
+  $("scaleNote").textContent = "依時間排序；另有 " + undated + " 幀為未標註年份的認證與文件紀錄。";
+})();
+
+/* ---------- 燈箱 ---------- */
+const lb = $("lb"), lbImg = $("lbImg"), lbDate = $("lbDate"), lbText = $("lbText"),
+      lbCat = $("lbCat"), lbCount = $("lbCount"), lbPrev = $("lbPrev"), lbNext = $("lbNext"), lbClose = $("lbClose");
+let pos = 0, opener = null;
+
+function render(){
+  const t = visible[pos];
+  if (!t) return;
+  const p = t.p;
+  lbImg.src = "assets/" + p.file;
+  lbImg.alt = (p.date ? p.date + "，" : "") + p.caption;
+  /* 原圖多為小尺寸，限制放大倍率避免破圖 */
+  lbImg.style.maxWidth = Math.round(clamp(p.w * 1.9, 300, 900)) + "px";
+  lbDate.textContent = p.date || "年份未標註";
+  lbText.textContent = p.caption;
+  lbCat.textContent = p.cat;
+  lbCount.textContent = (pos + 1) + " ／ " + visible.length;
+}
+function openLb(t){
+  pos = visible.indexOf(t);
+  if (pos < 0) return;
+  opener = t.btn;
+  lb.hidden = false;
+  document.body.style.overflow = "hidden";
+  render();
+  lbClose.focus();
+}
+function closeLb(){
+  lb.hidden = true;
+  document.body.style.overflow = "";
+  if (opener) opener.focus();
+  opener = null;
+}
+function step(d){
+  pos = (pos + d + visible.length) % visible.length;
+  render();
+}
+wall.addEventListener("click", function(e){
+  const b = e.target.closest(".tile");
+  if (!b) return;
+  const t = tiles[+b.dataset.i];
+  if (t) openLb(t);
+});
+lbClose.addEventListener("click", closeLb);
+lbPrev.addEventListener("click", function(){ step(-1); });
+lbNext.addEventListener("click", function(){ step(1); });
+lb.addEventListener("click", function(e){ if (e.target === lb) closeLb(); });
+lb.addEventListener("keydown", function(e){
+  if (e.key === "Escape"){ e.preventDefault(); closeLb(); return; }
+  if (e.key === "ArrowLeft"){ e.preventDefault(); step(-1); return; }
+  if (e.key === "ArrowRight"){ e.preventDefault(); step(1); return; }
+  if (e.key === "Tab"){
+    const f = [lbCount, lbClose, lbPrev, lbNext].filter(function(el){ return el.tagName === "BUTTON"; });
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    else if (f.indexOf(document.activeElement) < 0){ e.preventDefault(); first.focus(); }
+  }
+});
+
+/* ---------- 進場：極克制的淡入 ---------- */
+const rvs = document.querySelectorAll(".rv");
+if (!("IntersectionObserver" in window) || RM.matches){
+  rvs.forEach(function(el){ el.classList.add("in"); });
+} else {
+  const io = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+  rvs.forEach(function(el){ io.observe(el); });
+}
+
+/* ---------- 捲動時標示目前章節 ---------- */
+const links = Array.prototype.slice.call(document.querySelectorAll(".n-link"));
+const secs = links.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+let sTick = false;
+function spy(){
+  sTick = false;
+  let idx = 0;
+  const y = window.scrollY + 90;
+  secs.forEach(function(s, i){ if (s && s.offsetTop <= y) idx = i; });
+  links.forEach(function(a, i){
+    if (i === idx) a.setAttribute("aria-current", "true");
+    else a.removeAttribute("aria-current");
+  });
+}
+window.addEventListener("scroll", function(){
+  if (!sTick){ sTick = true; requestAnimationFrame(spy); }
+}, { passive: true });
+spy();
+
+})();
+</script>
+</body>
+</html>
